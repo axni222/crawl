@@ -93,6 +93,16 @@ static const map<job_type, job_def> job_data =
       { SK_ARMOUR, 1 }, { SK_STEALTH, 1 }, },
 } },
 
+{ JOB_ASSASSIN, {
+    "As", "Assassin",
+    5, 5, 9,
+    { SP_DEEP_ELF, SP_HUMAN, SP_NAGA },
+    { },
+    { "dagger plus:3", "leather armor", "potion of invisibility q:2", "shortbow" },
+    WCHOICE_NONE,
+    { { SK_FIGHTING, 2}, { SK_DODGING, 3}, { SK_WEAPON, 2}, {SK_STEALTH, 5}, },
+} },
+
 { JOB_BERSERKER, {
     "Be", "Berserker",
     9, -1, 4,
