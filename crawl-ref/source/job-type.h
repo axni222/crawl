@@ -10,6 +10,7 @@ enum job_type
 #if TAG_MAJOR_VERSION == 34
     JOB_PRIEST,
 #endif
+    JOB_ASSASSIN,
     JOB_GLADIATOR,
     JOB_NECROMANCER,
     JOB_BRIGAND,

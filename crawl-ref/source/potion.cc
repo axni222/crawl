@@ -12,6 +12,7 @@
 #include <unordered_map>
 
 #include "cloud.h"
+#include "fixedp.h"
 #include "god-conduct.h"
 #include "god-passive.h"
 #include "god-wrath.h" // reduce_xp_penance
@@ -182,7 +183,7 @@ public:
 
         int amount = 10 + random2avg(28, 3);
         if (is_potion)
-            amount = you.scale_potion_healing(amount);
+            amount = (int) you.scale_potion_healing(amount);
         inc_hp(amount);
         if (is_potion)
             print_potion_heal_message();
